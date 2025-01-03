@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K R Tutorials - 10th Standard Tuition</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: linear-gradient(135deg, #1d3557, #457b9d);
+            color: #ffffff;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header h2 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin: 5px 0 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1d3557;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #a8dadc;
+            text-decoration: underline;
+        }
+
+        .about {
+            margin: 20px 0;
+            text-align: center;
+            padding: 20px;
+            background-color: #ffe8d6;
+            border-radius: 10px;
+        }
+
+        .about h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #6a0572;
+        }
+
+        .about p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #444;
+        }
+
+        .subjects {
+            margin: 20px 0;
+            text-align: center;
+            padding: 20px;
+            background-color: #f1faee;
+            border-radius: 10px;
+        }
+
+        .subjects h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #1d3557;
+        }
+
+        .subjects .card {
+            display: inline-block;
+            width: 250px;
+            margin: 10px;
+            padding: 15px;
+            background-color: #a8dadc;
+            color: #1d3557;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .subjects .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .subjects .card h4 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+
+        .subjects .card p {
+            font-size: 1rem;
+            margin: 5px 0;
+        }
+
+        .register-form {
+            margin: 30px 0;
+        }
+
+        .register-form h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #ffffff;
+            background-color: #457b9d;
+            padding: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .register-form label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .register-form input {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .register-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #457b9d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .register-form button:hover {
+            background-color: #1d3557;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1rem;
+        }
+
+        .contact a {
+            color: #457b9d;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        .photo-section {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            gap: 20px;
+        }
+
+        .photo-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>K R Tutorials</h1>
+            <h2>Your Pathway to Academic Excellence</h2>
+        </header>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="about" class="about">
+            <h3>About Us</h3>
+            <p>K R Tutorials is committed to empowering 10th standard students with the knowledge and skills to excel in their academic journey. With experienced teachers, personalized attention, and a proven track record of success, we ensure each student reaches their full potential.</p>
+            <p>Join us for a transformative learning experience that fosters confidence and excellence in every subject.</p>
+        </div>
+
+        <div id="subjects" class="subjects">
+            <h3>Subjects and Fees</h3>
+            <div class="card">
+                <h4>Mathematics</h4>
+                <p>Fees: Rs. 500/month</p>
+            </div>
+            <div class="card">
+                <h4>Science</h4>
+                <p>Fees: Rs. 600/month</p>
+            </div>
+            <div class="card">
+                <h4>English</h4>
+                <p>Fees: Rs. 400/month</p>
+            </div>
+            <div class="card">
+                <h4>Social Studies</h4>
+                <p>Fees: Rs. 450/month</p>
+            </div>
+            <div class="card">
+                <h4>Hindi</h4>
+                <p>Fees: Rs. 400/month</p>
+            </div>
+        </div>
+
+        <div id="register" class="register-form">
+            <h3>Register Now</h3>
+                <form id="registrationForm" action="register.php" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </body>
+    </html>
+
+    
